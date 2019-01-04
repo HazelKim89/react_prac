@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {restaurants.map( restaurant, index => {
+        {restaurants.map((restaurant, index ) => {
           return <Restaurant name={restaurant.name} logo={restaurant.logo} key={index}/>
         })}
       </div>
