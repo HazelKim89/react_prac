@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import MainComponents from './base/js/MainMenu.js';
 
+
 class App extends Component {
   render() {
     return (
@@ -11,6 +12,9 @@ class App extends Component {
         <Container>
           <h1 className="display-2 text-left">Sketch World</h1>
           <Row>
+            <Col className="d-block d-lg-none d-xl-none text-right" xs="12">
+              <i className="material-icons">menu</i>
+            </Col>
             <Col className="d-none d-lg-block d-xl-block" xs="3">
               <MainComponents.MainMenu />
             </Col>
